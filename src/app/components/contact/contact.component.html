@@ -1,0 +1,46 @@
+<div class="container">
+	<h1>Contacto</h1>
+
+<!-- ViewChild -> Nos permite acceder a cierta parte de la pagina web como jquery, simplemente poniendole un nombre.
+
+appResaltado -> directiva creada por mi para aplicar estilos al parrafo
+ -->
+	<div id="texto" #textos>
+		<p appResaltado>
+			Esta es la página de contacto, puedes enviarnos cualquier duda
+		</p>		
+	</div>
+
+
+
+<!--
+	Tamaño del slider:
+	<input type="number" [(ngModel)]="widthSlider">
+	<button (click)="cargarSlider()">Cargar Slider</button>
+	<button (click)="resetearSlider()">Resetear Slider</button>
+
+	 Si contiene valor el amchura, que se muestre 
+	<div *ngIf="anchuraToSlider">
+		Importamos el comp hijo slider con su etiqueta
+		[anchura]="widthSlider" -> Transferir la propiedad widthSlider al componente hijo.
+		(conseguirAutor) -> etiqueta del componente hijo 
+	 
+		<slider [anchura]="anchuraToSlider"
+				[etiquetas]="captions"
+				(conseguirAutor)="getAutor($event)"
+				>
+			
+		</slider>
+		
+	</div>
+
+	<div class="container" *ngIf="autor">
+
+		{{autor.nombre}}
+		{{autor.website}}
+
+	</div>
+-->
+
+
+</div>

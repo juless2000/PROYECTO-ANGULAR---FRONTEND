@@ -1,0 +1,27 @@
+<!-- Cabecera -->
+<header>
+  <!-- Menú con la directiva [routerLink] 
+
+  .- [routerLinkActive]="['actived']" -> Mantener marcados los elementos del menú de navegación según la página.
+
+  -->
+  <ul>
+    <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">SOBRE MI</a></li>
+    <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">PROYECTOS</a></li>
+    <li id="logo"><a href="#">JM</a></li>
+    <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">CREAR PROYECTO</a></li>
+    <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">CONTACTO</a></li>
+  </ul>
+</header>
+
+<!-- Cuerpo de la página  -->
+<section id="content">
+
+  <!-- Para hacer funcionar/disparar el funcionamiento del router, se tiene que inicializar la etiqueta router-outlet -->
+  <router-outlet></router-outlet>
+  
+</section>
+
+<footer>
+  Portafolio de Julian Muñoz &copy;
+</footer>
